@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>九州旅手帖 2026秋</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="11/20–11/25 九州一人旅行程">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="九州旅手帖">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#F7F2E7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1E1A17" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  color-scheme:light;
+  --washi:#F7F2E7; --washi-deep:#EFE6D3; --paper:#FFFCF5;
+  --sumi:#2F2925; --sumi-soft:#5E554D; --kuchiba:#8C6A43; --line:#DCCFB6;
+  --momiji:#B3332A; --icho:#C9971C; --matcha:#55703A;
+  --d1:#7C8A3E; --d2:#9E8A1F; --d3:#B57514; --d4:#C05A22; --d5:#B53E2C; --d6:#8F2722;
+  --leaf-off:#E3D8C3; --shadow:0 1px 0 rgba(140,106,67,.12);
+  --serif:"Noto Serif TC","Songti TC","PMingLiU","Hiragino Mincho ProN",serif;
+  --sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei","Hiragino Sans",sans-serif;
+  --navh:64px;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --washi:#1E1A17; --washi-deep:#2A241F; --paper:#25201C;
+    --sumi:#EDE5D8; --sumi-soft:#BDB2A3; --kuchiba:#C9A57A; --line:#3E352D;
+    --momiji:#E0675A; --icho:#E7B95A; --matcha:#9DBB7A;
+    --d1:#A9B86A; --d2:#CDBB55; --d3:#E2A443; --d4:#E3814A; --d5:#E0614B; --d6:#C9483F;
+    --leaf-off:#3E352D; --shadow:0 1px 0 rgba(0,0,0,.3);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --washi:#1E1A17; --washi-deep:#2A241F; --paper:#25201C;
+  --sumi:#EDE5D8; --sumi-soft:#BDB2A3; --kuchiba:#C9A57A; --line:#3E352D;
+  --momiji:#E0675A; --icho:#E7B95A; --matcha:#9DBB7A;
+  --d1:#A9B86A; --d2:#CDBB55; --d3:#E2A443; --d4:#E3814A; --d5:#E0614B; --d6:#C9483F;
+  --leaf-off:#3E352D; --shadow:0 1px 0 rgba(0,0,0,.3);
+}
+*,*::before,*::after{box-sizing:inherit}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--washi);color:var(--sumi);font-family:var(--sans);font-size:16px;line-height:1.7;
+  background-image:radial-gradient(rgba(140,106,67,.05) 1px,transparent 1px);background-size:5px 5px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:20;background:var(--washi)}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--icho);outline-offset:2px;border-radius:4px}
+.wrap{max-width:720px;margin:0 auto;padding:0 16px calc(var(--navh) + env(safe-area-inset-bottom,0px) + 28px)}
+.panel[hidden]{display:none}
+h2.sec{font-family:var(--serif);font-size:23px;font-weight:700;margin:26px 2px 12px;display:flex;align-items:center;gap:9px}
+h2.sec svg{width:20px;height:20px;color:var(--momiji);flex:0 0 auto}
+h3.sub{font-family:var(--serif);font-size:18px;margin:24px 2px 10px}
+p{margin:0 0 8px}
+.muted{color:var(--sumi-soft);font-size:14px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:6px;box-shadow:var(--shadow)}
+
+/* map link */
+.pl{color:inherit;text-decoration:underline;text-decoration-color:color-mix(in srgb,var(--momiji) 55%,transparent);text-underline-offset:3px;text-decoration-thickness:1.5px}
+.pl::after{content:"";display:inline-block;width:.62em;height:.62em;margin-left:2px;vertical-align:.12em;background:var(--momiji);
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Cpath d='M5 0C3 0 1.5 1.5 1.5 3.4 1.5 6 5 10 5 10s3.5-4 3.5-6.6C8.5 1.5 7 0 5 0zm0 4.8a1.4 1.4 0 110-2.8 1.4 1.4 0 010 2.8z'/%3E%3C/svg%3E") center/contain no-repeat;
+  mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Cpath d='M5 0C3 0 1.5 1.5 1.5 3.4 1.5 6 5 10 5 10s3.5-4 3.5-6.6C8.5 1.5 7 0 5 0zm0 4.8a1.4 1.4 0 110-2.8 1.4 1.4 0 010 2.8z'/%3E%3C/svg%3E") center/contain no-repeat}
+.drv{display:inline-flex;align-items:center;gap:4px;font-size:12.5px;line-height:1;padding:5px 8px;border-radius:999px;border:1px solid var(--kuchiba);color:var(--kuchiba);background:transparent;cursor:pointer;margin-left:6px;vertical-align:2px;white-space:nowrap}
+.drv svg{width:12px;height:12px}
+
+/* hero */
+.hero{position:relative;overflow:hidden;min-height:330px;padding:30px 6px 18px;display:flex;gap:16px;justify-content:space-between}
+.hero-text{align-self:flex-end;position:relative;z-index:2}
+.hero-route{font-family:var(--serif);font-weight:600;color:var(--kuchiba);font-size:14px;line-height:1.6;margin:0 0 8px}
+.hero-dates{font-family:var(--serif);font-size:30px;font-weight:700;line-height:1.25;margin:0}
+.hero-dates small{display:block;font-size:15px;font-weight:600;color:var(--sumi-soft);margin-top:6px}
+.hero-title{display:flex;flex-direction:row-reverse;gap:.18em;font-family:var(--serif);font-weight:900;font-size:clamp(44px,12.5vw,78px);line-height:1.12;margin:0;position:relative;z-index:2;flex:0 0 auto}
+.hero-title .col{display:flex;flex-direction:column}
+.hero-title .col:first-child{margin-top:.15em}
+.hero-title .red{color:var(--momiji)}
+.hero-leaf{position:absolute;right:-40px;top:-34px;width:240px;height:240px;opacity:.10;z-index:1;transform:rotate(18deg);color:var(--momiji)}
+.falling{position:absolute;inset:0;pointer-events:none;z-index:1}
+.falling svg{position:absolute;top:-40px;width:20px;height:20px;opacity:.85;animation:fall linear infinite}
+.falling svg:nth-child(1){left:8%;animation-duration:11s;animation-delay:-2s;color:var(--d5)}
+.falling svg:nth-child(2){left:30%;animation-duration:14s;animation-delay:-7s;color:var(--icho);width:15px}
+.falling svg:nth-child(3){left:48%;animation-duration:12s;animation-delay:-4s;color:var(--d6)}
+.falling svg:nth-child(4){left:66%;animation-duration:16s;animation-delay:-10s;color:var(--d4);width:17px}
+.falling svg:nth-child(5){left:84%;animation-duration:13s;animation-delay:-1s;color:var(--d5);width:14px}
+@keyframes fall{0%{transform:translate(0,0) rotate(0)}25%{transform:translate(18px,100px) rotate(90deg)}50%{transform:translate(-12px,200px) rotate(170deg)}75%{transform:translate(14px,300px) rotate(260deg)}100%{transform:translate(-6px,400px) rotate(360deg);opacity:0}}
+@media (prefers-reduced-motion:reduce){.falling{display:none}}
+
+/* ledger */
+.ledger dl{margin:0;display:grid;grid-template-columns:4.6em 1fr}
+.ledger dt,.ledger dd{padding:11px 14px;border-top:1px solid var(--line);margin:0;font-size:15px}
+.ledger dt:first-of-type,.ledger dd:first-of-type{border-top:0}
+.ledger dt{font-family:var(--serif);font-weight:700;color:var(--kuchiba)}
+.stay{display:block;margin-bottom:8px}.stay:last-child{margin-bottom:0}
+.drivers{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.drivers button{text-align:left;padding:10px 12px;border:1px solid var(--line);border-radius:6px;background:var(--paper);cursor:pointer;font-size:14px;line-height:1.4}
+.drivers button b{display:block;font-family:var(--serif);font-size:15px}
+
+/* day tab */
+.daybar{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--washi);margin:0 -16px;padding:10px 16px 8px;border-bottom:1px solid var(--line)}
+.chips{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chips button{flex:1 0 auto;min-width:52px;border:1px solid var(--line);background:var(--paper);border-radius:8px;padding:5px 6px 4px;cursor:pointer;line-height:1.25;font-size:13px;color:var(--sumi-soft)}
+.chips button b{display:block;font-size:15px;color:var(--sumi)}
+.chips button[aria-selected="true"]{background:var(--c);border-color:var(--c);color:#FFFDF8}
+.chips button[aria-selected="true"] b{color:#FFFDF8}
+.chips button .today{display:block;font-size:10.5px;color:var(--momiji)}
+.chips button[aria-selected="true"] .today{color:#FFFDF8}
+.mode{display:flex;justify-content:space-between;align-items:center;margin-top:8px;font-size:13px;color:var(--sumi-soft)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--paper)}
+.seg button{border:0;background:none;padding:3px 13px;cursor:pointer;font-size:13px;color:var(--sumi-soft)}
+.seg button[aria-pressed="true"]{background:var(--sumi);color:var(--washi)}
+
+.day{margin-top:16px;overflow:hidden}
+.day.anim{animation:slidein .22s ease-out}
+.day.anim.back{animation-name:slideback}
+@keyframes slidein{from{opacity:.3;transform:translateX(24px)}to{opacity:1;transform:none}}
+@keyframes slideback{from{opacity:.3;transform:translateX(-24px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.day.anim{animation:none}}
+.day-head{display:flex;align-items:stretch;border-bottom:1px solid var(--line);min-height:100px}
+.day-band{background:var(--c);color:#FFFDF8;font-family:var(--serif);font-weight:700;font-size:15px;line-height:1.25;padding:14px 11px;display:flex;flex-direction:column;align-items:center;justify-content:center;flex:0 0 auto}
+.day-band span{display:block}
+.day-title{padding:14px 16px;align-self:center}
+.day-date{font-size:14px;color:var(--sumi-soft);margin:0}
+.day-title h3{font-family:var(--serif);font-size:22px;font-weight:700;margin:2px 0 0;line-height:1.35}
+.day-body{padding:16px}
+.alerts{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}
+.alert{display:inline-flex;align-items:center;gap:5px;font-size:13.5px;font-weight:700;color:var(--momiji);border:1.5px solid var(--momiji);border-radius:5px;padding:2px 8px;background:color-mix(in srgb,var(--momiji) 7%,var(--paper))}
+.alert svg{width:13px;height:13px}
+.timebar{margin:0 0 16px}
+.bar{display:flex;height:12px;border-radius:6px;overflow:hidden;background:var(--washi-deep)}
+.bar span{display:block;height:100%}
+.bar .t{background:repeating-linear-gradient(135deg,var(--kuchiba) 0 3px,transparent 3px 6px);opacity:.55}
+.bar .p{background:var(--c)}
+.bar .p2{background:color-mix(in srgb,var(--c) 50%,var(--paper))}
+.bar .o{background:repeating-linear-gradient(90deg,var(--c) 0 6px,transparent 6px 9px);opacity:.6}
+.legend{display:flex;flex-wrap:wrap;gap:2px 14px;font-size:13px;color:var(--sumi-soft);margin-top:6px}
+.legend b{color:var(--sumi)}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+.lt{background:repeating-linear-gradient(135deg,var(--kuchiba) 0 2px,transparent 2px 4px)}
+.lp{background:var(--c)} .lp2{background:color-mix(in srgb,var(--c) 50%,var(--paper))}
+.lo{background:repeating-linear-gradient(90deg,var(--c) 0 3px,transparent 3px 5px)}
+
+ol.steps{list-style:none;margin:0;padding:0;counter-reset:s}
+ol.steps>li{counter-increment:s;position:relative;padding:0 0 12px 34px}
+ol.steps>li::before{content:counter(s);position:absolute;left:0;top:2px;width:22px;height:22px;border-radius:50%;border:1.5px solid var(--c);color:var(--c);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;background:var(--paper)}
+ol.steps>li::after{content:"";position:absolute;left:10.5px;top:26px;bottom:0;border-left:1px dashed var(--line)}
+ol.steps>li:last-child::after{display:none}
+ol.steps>li:last-child{padding-bottom:0}
+.main{font-weight:500}
+.dt{display:block;font-size:14px;color:var(--sumi-soft);margin-top:3px}
+.brief .dt{display:none}
+.tag{display:inline-block;font-size:12px;color:var(--kuchiba);border:1px solid var(--kuchiba);border-radius:3px;padding:0 5px;margin-right:5px;line-height:1.6;vertical-align:1px;font-weight:400}
+.flag{color:var(--momiji);font-weight:700;font-size:14px;margin-left:4px;white-space:nowrap}
+.plan{margin-top:12px;padding:12px 14px;border:1px solid var(--line);border-radius:5px}
+.plan h4{margin:0 0 3px;font-family:var(--serif);font-size:16px}
+.plan h4 em{font-style:normal;font-size:12px;color:var(--matcha);border:1px solid var(--matcha);border-radius:3px;padding:0 5px;margin-left:6px;font-family:var(--sans);vertical-align:2px}
+.lugg{margin-top:14px;padding:10px 12px;border-radius:5px;background:color-mix(in srgb,var(--c) 9%,var(--paper));font-size:14px;display:flex;gap:8px}
+.lugg svg{width:16px;height:16px;flex:0 0 auto;margin-top:3px;color:var(--c)}
+.koyo-inline{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:12px;font-size:14px}
+.leaves{display:inline-flex;gap:1px;vertical-align:-3px;margin-left:6px}
+.leaves svg{width:15px;height:15px;color:var(--leaf-off)}
+.leaves svg.on{color:var(--momiji)}
+.pager{display:flex;justify-content:space-between;gap:10px;margin-top:14px}
+.pager button{flex:1;border:1px solid var(--line);background:var(--paper);border-radius:6px;padding:10px 12px;cursor:pointer;font-size:14px;color:var(--sumi-soft)}
+.pager button b{color:var(--sumi);font-weight:700}
+.pager button:disabled{visibility:hidden}
+.swipe-hint{text-align:center;font-size:12px;color:var(--sumi-soft);margin-top:8px}
+
+/* transit / koyo / list */
+.booking{list-style:none;margin:0;padding:4px 14px}
+.booking li{display:grid;grid-template-columns:5.2em 1fr;gap:12px;padding:12px 0;border-top:1px solid var(--line)}
+.booking li:first-child{border-top:0}
+.when{font-family:var(--serif);font-weight:700;font-size:18px;line-height:1.2;color:var(--kuchiba)}
+.when small{display:block;font-family:var(--sans);font-weight:400;font-size:12px;color:var(--sumi-soft);margin-top:4px;line-height:1.45}
+.must{color:var(--matcha);font-weight:700;font-size:13px;margin-left:4px}
+.maybe{color:var(--sumi-soft);font-size:13px;margin-left:4px}
+.opts{display:grid;gap:10px}
+.opt{padding:12px 14px}
+.opt-top{display:flex;justify-content:space-between;gap:8px;align-items:baseline;flex-wrap:wrap}
+.opt h4{margin:0;font-size:16px;font-family:var(--serif)}
+.fig{font-size:14px;color:var(--sumi-soft);white-space:nowrap}
+.opt p{margin:4px 0 0;font-size:14px}
+.pill{display:inline-block;font-size:12px;border-radius:999px;padding:0 8px;line-height:1.7;margin-left:6px;vertical-align:2px;border:1px solid currentColor;font-family:var(--sans)}
+.pill.free{color:var(--matcha)} .pill.need{color:var(--momiji)}
+.rows div{display:flex;justify-content:space-between;gap:10px;padding:9px 14px;border-top:1px solid var(--line);font-size:14.5px}
+.rows div:first-child{border-top:0}
+.rows span:last-child{color:var(--sumi-soft);text-align:right}
+.koyo-list{list-style:none;margin:0;padding:0}
+.koyo-list li{padding:12px 14px;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr auto;gap:2px 12px}
+.koyo-list li:first-child{border-top:0}
+.koyo-list .name{font-weight:700}
+.koyo-list .meta{grid-column:1/-1;font-size:13.5px;color:var(--sumi-soft)}
+.check{list-style:none;margin:0;padding:0}
+.check li{border-top:1px solid var(--line)} .check li:first-child{border-top:0}
+.check label{display:flex;gap:12px;align-items:flex-start;padding:12px 14px;cursor:pointer;font-size:15px}
+.check input{position:absolute;opacity:0;width:1px;height:1px}
+.bx{flex:0 0 auto;width:22px;height:22px;border:1.5px solid var(--kuchiba);border-radius:4px;margin-top:2px;display:flex;align-items:center;justify-content:center;background:var(--paper)}
+.bx svg{width:16px;height:16px;color:#FFFDF8;opacity:0}
+.check input:checked+.bx{background:var(--momiji);border-color:var(--momiji)}
+.check input:checked+.bx svg{opacity:1}
+.check input:checked~.txt{color:var(--sumi-soft);text-decoration:line-through;text-decoration-color:var(--line)}
+.check input:focus-visible+.bx{outline:2px solid var(--icho);outline-offset:2px}
+.txt small{display:block;color:var(--sumi-soft);font-size:13px}
+.check-meta{display:flex;justify-content:space-between;align-items:center;margin:10px 2px 0;font-size:13px;color:var(--sumi-soft)}
+.check-meta button{color:var(--kuchiba);background:none;border:1px solid var(--line);border-radius:4px;padding:3px 10px;cursor:pointer}
+.note{margin-top:12px;padding:10px 12px;border-left:3px solid var(--icho);background:color-mix(in srgb,var(--icho) 9%,var(--paper));font-size:14px;border-radius:0 4px 4px 0}
+.foot{margin-top:28px;font-size:13px;color:var(--sumi-soft)}
+.foot ul{padding-left:1.2em;margin:6px 0 0}
+.foot a{color:var(--kuchiba)}
+
+/* bottom nav */
+.tabbar{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--paper);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px)}
+.tabbar-inner{max-width:720px;margin:0 auto;display:grid;grid-template-columns:repeat(5,1fr);height:var(--navh)}
+.tabbar button{border:0;background:none;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;font-size:12px;color:var(--sumi-soft)}
+.tabbar svg{width:22px;height:22px}
+.tabbar button[aria-selected="true"]{color:var(--momiji);font-weight:700}
+
+/* driver dialog */
+dialog{border:0;border-radius:10px;padding:0;max-width:min(92vw,520px);width:100%;background:var(--paper);color:var(--sumi)}
+dialog::backdrop{background:rgba(20,15,12,.55)}
+.dlg{padding:24px 22px 18px;text-align:center}
+.dlg .ask{font-size:16px;color:var(--sumi-soft);margin:0 0 10px}
+.dlg .ja{font-family:"Noto Serif JP","Hiragino Mincho ProN",var(--serif);font-size:clamp(30px,9vw,44px);font-weight:700;line-height:1.3;margin:0 0 12px}
+.dlg .addr{font-size:18px;line-height:1.5;margin:0 0 18px}
+.dlg button{border:1px solid var(--line);background:var(--washi);border-radius:6px;padding:10px 24px;cursor:pointer;font-size:15px}
+@media (min-width:640px){.hero{min-height:380px}.opts{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="maple" viewBox="0 0 100 100"><path fill="currentColor" d="M50 3 57 27 73 16 68 39 93 34 77 52 90 61 63 63 66 81 52 70 51 97 49 97 48 70 34 81 37 63 10 61 23 52 7 34 32 39 27 16 43 27Z"/></symbol>
+  <symbol id="tick" viewBox="0 0 16 16"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="clock" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 4.6V8l2.4 1.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="bag" viewBox="0 0 16 16"><rect x="3" y="4.5" width="10" height="9" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M6 4.5V3h4v1.5M6.5 13.5v1M9.5 13.5v1" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+  <symbol id="car" viewBox="0 0 16 16"><path d="M2.5 10.5V8l1.6-3.4h7.8L13.5 8v2.5M2.5 10.5h11M4.5 12.5v-2M11.5 12.5v-2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><rect x="4" y="3.5" width="16" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 8.5h8M8 12h8M8 15.5h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-day" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 9.5h17M8 3v4M16 3v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-train" viewBox="0 0 24 24"><rect x="6" y="3.5" width="12" height="13" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M6 10.5h12M9 19.5l-2 2M15 19.5l2 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="9.5" cy="13.5" r="1" fill="currentColor"/><circle cx="14.5" cy="13.5" r="1" fill="currentColor"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 12.2 10.8 15 16 9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</defs></svg>
+
+<div class="wrap">
+
+<!-- ================= 總覽 ================= -->
+<section class="panel" id="p-info" aria-label="總覽">
+  <header class="hero">
+    <div class="falling" aria-hidden="true"><svg><use href="#maple"/></svg><svg><use href="#maple"/></svg><svg><use href="#maple"/></svg><svg><use href="#maple"/></svg><svg><use href="#maple"/></svg></div>
+    <svg class="hero-leaf" aria-hidden="true"><use href="#maple"/></svg>
+    <div class="hero-text">
+      <p class="hero-route">博多・太宰府・門司港・下關・由布院</p>
+      <p class="hero-dates">11/20 – 11/25<small>2026 秋　一人旅　六日五夜</small></p>
+      <p class="muted" style="margin-top:12px">不租車，全程電車、巴士和走路。</p>
+    </div>
+    <h1 class="hero-title" aria-label="九州旅手帖"><span class="col" aria-hidden="true"><span>九</span><span>州</span></span><span class="col" aria-hidden="true"><span class="red">旅</span><span>手</span><span>帖</span></span></h1>
+  </header>
+
+  <div class="card ledger"><dl>
+    <dt>去程</dt><dd>11/20（五）中華航空 CI128<br>14:15 桃園 → 17:30 福岡</dd>
+    <dt>回程</dt><dd>11/25（三）中華航空 CI117<br>20:35 福岡 → 22:20 桃園<br><span class="flag" style="margin:0">18:30 前到國際線</span></dd>
+    <dt>住宿</dt><dd>
+      <span class="stay"><b>11/20</b>　<a class="pl" data-map="東横INN博多駅南">東橫INN博多站南</a><br><span class="muted">博多站筑紫口走路約13分鐘</span></span>
+      <span class="stay"><b>11/21–22</b>　<a class="pl" data-map="福岡県北九州市戸畑区丸町2丁目4-20">Nostime lodge（戶畑）</a><br><span class="muted">女性限定、共用浴室；入住 15:00–20:00、退房 11:00</span></span>
+      <span class="stay"><b>11/23</b>　<a class="pl" data-map="東洋ホテル 福岡市博多区博多駅東1-9-36">東洋酒店</a><br><span class="muted">博多站筑紫口走路約2分鐘；14:00 入住，可先寄放行李</span></span>
+      <span class="stay"><b>11/24</b>　<a class="pl" data-map="山荘田名加 由布院">山荘田名加（由布院）</a><br><span class="muted">由布院站620公尺；入住 15:00–20:00、退房 10:00；含早餐、不含晚餐</span></span>
+    </dd>
+    <dt>票券</dt><dd>不買周遊券。普通車刷IC卡（Suica／SUGOCA）；由布院之森去回單買，每趟6,130日圓。</dd>
+    <dt>天氣</dt><dd>福岡最高約18度、最低約10度。由布院最高約15度、最低約4度，清晨可能近0度。</dd>
+    <dt>注意</dt><dd>11/21–23 是日本三連休，住宿和交通都擠。</dd>
+  </dl></div>
+
+  <h2 class="sec"><svg><use href="#car"/></svg>給司機看</h2>
+  <p class="muted" style="margin:0 2px 10px">點一下會用大字顯示日文名稱和地址，直接把手機拿給司機。</p>
+  <div class="drivers">
+    <button type="button" data-drv="nostime"><b>Nostime lodge</b>戶畑住處</button>
+    <button type="button" data-drv="tobata"><b>戸畑駅</b>JR戶畑站</button>
+    <button type="button" data-drv="sanso"><b>山荘田名加</b>由布院旅館</button>
+    <button type="button" data-drv="yufuin"><b>由布院駅</b>JR由布院站</button>
+    <button type="button" data-drv="airport"><b>福岡空港 国際線</b>機場國際線</button>
+    <button type="button" data-drv="kamado"><b>竈門神社</b>太宰府</button>
+    <button type="button" data-drv="toyoko"><b>東横INN博多駅南</b>11/20 住宿</button>
+    <button type="button" data-drv="toyo"><b>東洋ホテル</b>11/23 住宿</button>
+  </div>
+</section>
+
+<!-- ================= 每日 ================= -->
+<section class="panel" id="p-day" aria-label="每日行程" hidden>
+  <div class="daybar">
+    <div class="chips" role="tablist" aria-label="日期">
+      <button type="button" role="tab" data-d="0" style="--c:var(--d1)"><b>11/20</b>五</button>
+      <button type="button" role="tab" data-d="1" style="--c:var(--d2)"><b>11/21</b>六</button>
+      <button type="button" role="tab" data-d="2" style="--c:var(--d3)"><b>11/22</b>日</button>
+      <button type="button" role="tab" data-d="3" style="--c:var(--d4)"><b>11/23</b>一</button>
+      <button type="button" role="tab" data-d="4" style="--c:var(--d5)"><b>11/24</b>二</button>
+      <button type="button" role="tab" data-d="5" style="--c:var(--d6)"><b>11/25</b>三</button>
+    </div>
+    <div class="mode"><span>顯示方式</span><span class="seg" role="group" aria-label="顯示方式"><button type="button" data-mode="brief">簡要</button><button type="button" data-mode="full">完整</button></span></div>
+  </div>
+
+  <div id="days">
+
+  <!-- Day 1 -->
+  <article class="card day" data-day="0" style="--c:var(--d1)">
+    <div class="day-head"><div class="day-band"><span>一</span><span>日</span><span>目</span></div><div class="day-title"><p class="day-date">11/20（五）</p><h3>抵達・中洲河畔</h3></div></div>
+    <div class="day-body">
+      <div class="timebar"><div class="bar" role="img" aria-label="交通約1小時，博多約2小時"><span class="t" style="width:33%"></span><span class="p" style="width:67%"></span></div>
+        <div class="legend"><span><i class="lt"></i>交通 <b>約1小時</b></span><span><i class="lp"></i>博多 <b>約2小時</b></span></div></div>
+      <ol class="steps">
+        <li><span class="main">17:30 抵達<a class="pl" data-map="福岡空港 国際線ターミナル">國際線</a>，巴士到博多站</span><span class="dt">入境後搭巴士約20–25分鐘。</span></li>
+        <li><span class="main">走到<a class="pl" data-map="東横INN博多駅南">東橫INN博多站南</a></span><button type="button" class="drv" data-drv="toyoko"><svg><use href="#car"/></svg>給司機看</button><span class="dt">博多站走路約13分鐘；拖行李累的話搭計程車，車程很短。</span></li>
+        <li><span class="main">散步到<a class="pl" data-map="中洲 屋台">中洲河畔</a>看屋台</span><span class="dt">看氣氛就好，想吃再坐。中洲價格偏高，天神、長濱比較實在。</span></li>
+      </ol>
+      <div class="lugg"><svg><use href="#bag"/></svg><span>行李：直接帶到東橫INN。</span></div>
+    </div>
+  </article>
+
+  <!-- Day 2 -->
+  <article class="card day" data-day="1" style="--c:var(--d2)">
+    <div class="day-head"><div class="day-band"><span>二</span><span>日</span><span>目</span></div><div class="day-title"><p class="day-date">11/21（六）三連休第一天</p><h3>太宰府 → 移動到戶畑</h3></div></div>
+    <div class="day-body">
+      <div class="alerts"><span class="alert"><svg><use href="#clock"/></svg>20:00 前入住戶畑</span></div>
+      <div class="timebar"><div class="bar" role="img" aria-label="交通約3小時，太宰府約4小時，小倉約3小時看體力"><span class="t" style="width:30%"></span><span class="p" style="width:40%"></span><span class="o" style="width:30%"></span></div>
+        <div class="legend"><span><i class="lt"></i>交通 <b>約3小時</b></span><span><i class="lp"></i>太宰府 <b>約4小時</b></span><span><i class="lo"></i>小倉 <b>約3小時（看體力）</b></span></div></div>
+      <ol class="steps">
+        <li><span class="main">退房，行李寄<a class="pl" data-map="博多駅">博多站</a>置物櫃</span><span class="dt">大型1,000日圓、特大型1,200日圓，早上空位最多。滿了就帶著行李去，寄放太宰府站置物櫃。</span></li>
+        <li><span class="main">8:00「旅人」巴士 → 太宰府</span><span class="dt">博多巴士總站1樓11號乘車處；8:00 直達約33分鐘，週末約每15–30分鐘一班；700日圓，可刷IC卡。</span></li>
+        <li><span class="main"><a class="pl" data-map="太宰府天満宮">太宰府天滿宮</a> → <a class="pl" data-map="光明禅寺 太宰府">光明禪寺</a></span><span class="dt">天滿宮6:30開門，參拜藤本壯介設計的臨時本殿；光明禪寺開門有8:00／9:30兩種說法，現場確認。</span></li>
+        <li><span class="main">社區巴士 → <a class="pl" data-map="宝満宮竈門神社">竈門神社</a></span><span class="dt">太宰府站搭「まほろば號」約10分鐘，100日圓；錯過可搭計程車約6分鐘。</span></li>
+        <li><span class="main">梅枝餅，中午過後回博多取行李</span><span class="dt">「旅人」太宰府 → 博多約38分鐘。</span></li>
+        <li><span class="main">JR到戶畑，15:00 後入住</span><button type="button" class="drv" data-drv="nostime"><svg><use href="#car"/></svg>給司機看</button><span class="dt">走法見「交通」分頁。戶畑站到住處走路15–18分鐘，帶行李建議計程車，約900–1,100日圓。</span></li>
+        <li><span class="main"><span class="tag">看體力</span><a class="pl" data-map="小倉城">小倉城</a>，魚町吃晚餐</span><span class="dt">JR到西小倉約5分鐘，走10分鐘；9:00–19:00，350日圓，含庭園共通券560日圓。</span></li>
+      </ol>
+      <div class="lugg"><svg><use href="#bag"/></svg><span>行李：博多站置物櫃 → 下午取回 → 戶畑入住。</span></div>
+      <div class="koyo-inline">
+        <span>竈門神社<span class="leaves" aria-label="紅葉度5分之3"><svg class="on"><use href="#maple"/></svg><svg class="on"><use href="#maple"/></svg><svg class="on"><use href="#maple"/></svg><svg><use href="#maple"/></svg><svg><use href="#maple"/></svg></span></span>
+        <span>小倉城庭園<span class="leaves" aria-label="紅葉度5分之4"><svg class="on"><use href="#maple"/></svg><svg class="on"><use href="#maple"/></svg><svg class="on"><use href="#maple"/></svg><svg class="on"><use href="#maple"/></svg><svg><use href="#maple"/></svg></span></span>
+      </div>
+    </div>
+  </article>
+
+  <!-- Day 3 -->
+  <article class="card day" data-day="2" style="--c:var(--d3)">
+    <div class="day-head"><div class="day-band"><span>三</span><span>日</span><span>目</span></div><div class="day-title"><p class="day-date">11/22（日）</p><h3>門司港・下關・海峽夜景</h3></div></div>
+    <div class="day-body">
+      <div class="alerts"><span class="alert"><svg><use href="#clock"/></svg>唐戶壽司中午前到</span></div>
+      <div class="timebar"><div class="bar" role="img" aria-label="交通約1.5小時，門司港共4到5小時，下關約3小時"><span class="t" style="width:16%"></span><span class="p" style="width:26%"></span><span class="p2" style="width:32%"></span><span class="p" style="width:26%"></span></div>
+        <div class="legend"><span><i class="lt"></i>交通 <b>約1.5小時</b></span><span><i class="lp"></i>門司港 <b>白天＋夜晚4–5小時</b></span><span><i class="lp2"></i>下關 <b>約3小時</b></span></div></div>
+      <ol class="steps">
+        <li><span class="main"><span class="tag">前一天沒去</span>早上<a class="pl" data-map="小倉城">小倉城</a></span><span class="dt">JR到西小倉，9:00 開門。</span></li>
+        <li><span class="main">10點左右到<a class="pl" data-map="門司港駅">門司港</a>，逛懷舊區</span><span class="dt">戶畑有直達門司港的普通車，約20多分鐘；門司港站、舊門司稅關等大正洋館。</span></li>
+        <li><span class="main">渡輪到唐戶，<a class="pl" data-map="唐戸市場">唐戶市場</a>吃壽司</span><span class="dt">船程5分鐘、每20分鐘一班、400日圓；週日壽司活動8:00–15:00，賣完就收。</span></li>
+        <li><span class="main"><a class="pl" data-map="赤間神宮">赤間神宮</a>、<a class="pl" data-map="日清講和記念館">日清講和紀念館</a></span><span class="dt">兩處相鄰。神宮境內自由參觀；紀念館免費，9:00–17:00，馬關條約簽約地。</span></li>
+        <li><span class="main">渡輪回門司港，下午放慢</span><span class="dt">喝咖啡、吃燒咖哩，等天黑。</span></li>
+        <li><span class="main">18:00 燈飾點亮，上<a class="pl" data-map="門司港レトロ展望室">展望室</a>看夜景</span><span class="dt">門司港站日落就打燈；燈飾到原則24:00。展望室營業到22:00，最後入館21:30。</span></li>
+        <li><span class="main">JR回戶畑，計程車回住處</span><button type="button" class="drv" data-drv="nostime"><svg><use href="#car"/></svg>給司機看</button><span class="dt">晚上住宅區夜路，建議從戶畑站搭計程車。</span></li>
+      </ol>
+      <div class="lugg"><svg><use href="#bag"/></svg><span>行李：放在戶畑住處，空手出門。</span></div>
+    </div>
+  </article>
+
+  <!-- Day 4 -->
+  <article class="card day" data-day="3" style="--c:var(--d4)">
+    <div class="day-head"><div class="day-band"><span>四</span><span>日</span><span>目</span></div><div class="day-title"><p class="day-date">11/23（一）勤勞感謝日</p><h3>戶畑 → 博多舊市街</h3></div></div>
+    <div class="day-body">
+      <div class="alerts"><span class="alert"><svg><use href="#clock"/></svg>11:00 前退房</span></div>
+      <div class="timebar"><div class="bar" role="img" aria-label="戶畑早上約1.5小時，交通約1.5小時，博多約5小時"><span class="p2" style="width:19%"></span><span class="t" style="width:19%"></span><span class="p" style="width:62%"></span></div>
+        <div class="legend"><span><i class="lp2"></i>戶畑早上 <b>約1.5小時</b></span><span><i class="lt"></i>交通 <b>約1.5小時</b></span><span><i class="lp"></i>博多 <b>約5小時</b></span></div></div>
+      <ol class="steps">
+        <li><span class="main">睡晚一點，計程車到<a class="pl" data-map="戸畑駅">戶畑站</a></span><button type="button" class="drv" data-drv="tobata"><svg><use href="#car"/></svg>給司機看</button></li>
+        <li><span class="main">搭車回博多</span><span class="dt">音速號每小時 :45 發，約43分鐘；或區間快速白天約每小時 :52 一班，約70分鐘。</span></li>
+        <li><span class="main">行李寄<a class="pl" data-map="東洋ホテル 福岡市博多区博多駅東1-9-36">東洋酒店</a></span><span class="dt">博多站筑紫口走路約2分鐘，14:00 入住。</span></li>
+        <li><span class="main"><a class="pl" data-map="櫛田神社 博多">櫛田神社</a>、<a class="pl" data-map="東長寺 博多">東長寺</a>、<a class="pl" data-map="承天寺 博多">承天寺</a>、<a class="pl" data-map="川端通商店街">川端商店街</a></span><span class="dt">都在走路範圍；還有體力再去運河城或天神。</span></li>
+        <li><span class="main">早點休息，隔天一早出發</span></li>
+      </ol>
+      <div class="lugg"><svg><use href="#bag"/></svg><span>行李：帶回博多，寄放東洋酒店。</span></div>
+      <div class="koyo-inline"><span>福岡市區<span class="leaves" aria-label="紅葉度5分之1"><svg class="on"><use href="#maple"/></svg><svg><use href="#maple"/></svg><svg><use href="#maple"/></svg><svg><use href="#maple"/></svg><svg><use href="#maple"/></svg></span></span></div>
+    </div>
+  </article>
+
+  <!-- Day 5 -->
+  <article class="card day" data-day="4" style="--c:var(--d5)">
+    <div class="day-head"><div class="day-band"><span>五</span><span>日</span><span>目</span></div><div class="day-title"><p class="day-date">11/24（二）</p><h3>由布院・溫泉旅館</h3></div></div>
+    <div class="day-body">
+      <div class="alerts"><span class="alert"><svg><use href="#clock"/></svg>17:00 前取行李</span></div>
+      <div class="timebar"><div class="bar" role="img" aria-label="交通約2.5小時，由布院約5小時加一晚"><span class="t" style="width:33%"></span><span class="p" style="width:67%"></span></div>
+        <div class="legend"><span><i class="lt"></i>交通 <b>約2.5小時</b></span><span><i class="lp"></i>由布院 <b>約5小時＋住一晚</b></span></div></div>
+      <ol class="steps">
+        <li><span class="main">9:17 由布院之森 → 11:31 由布院</span><span class="dt">1號，全車指定席，博多站出發。</span></li>
+        <li><span class="main">行李寄<a class="pl" data-map="由布市ツーリストインフォメーションセンター">車站旁觀光情報中心</a></span><span class="dt">人工寄放600–800日圓、置物櫃500–600日圓，營業到17:00。</span></li>
+        <li><span class="main"><a class="pl" data-map="湯の坪街道">湯之坪街道</a>逛到<a class="pl" data-map="金鱗湖">金鱗湖</a></span><span class="dt">車站走到金鱗湖約20–30分鐘；商店約17點打烊，午餐在街道。</span></li>
+        <li><span class="main">16:30 取行李，入住<a class="pl" data-map="山荘田名加 由布院">山荘田名加</a></span><button type="button" class="drv" data-drv="sanso"><svg><use href="#car"/></svg>給司機看</button><span class="dt">走路約8–10分鐘，或計程車約950日圓。</span></li>
+        <li><span class="main">走回車站附近吃晚餐</span><span class="dt">當天週二：由布まぶし「心」駅前店 10:30–20:30（最後點餐19:30），車站前2樓，一個人最好進；和作 17:00–22:00（週四休）；八緣 17:00–24:00（週一休）。割烹サトウ週二休。資料約兩年前，出發前確認。</span></li>
+        <li><span class="main">晚上泡包租溫泉</span><span class="dt">3個，其中1個露天。</span></li>
+      </ol>
+      <div class="lugg"><svg><use href="#bag"/></svg><span>行李：由布院之森有行李區 → 觀光情報中心寄放 → 16:30 取回入住。</span></div>
+      <div class="koyo-inline"><span>金鱗湖<span class="leaves" aria-label="紅葉度5分之3"><svg class="on"><use href="#maple"/></svg><svg class="on"><use href="#maple"/></svg><svg class="on"><use href="#maple"/></svg><svg><use href="#maple"/></svg><svg><use href="#maple"/></svg></span></span><span class="muted">今年預測未公布</span></div>
+    </div>
+  </article>
+
+  <!-- Day 6 -->
+  <article class="card day" data-day="5" style="--c:var(--d6)">
+    <div class="day-head"><div class="day-band"><span>六</span><span>日</span><span>目</span></div><div class="day-title"><p class="day-date">11/25（三）</p><h3>由布院的早晨 → 回國</h3></div></div>
+    <div class="day-body">
+      <div class="alerts"><span class="alert"><svg><use href="#clock"/></svg>10:00 退房</span><span class="alert"><svg><use href="#clock"/></svg>18:30 前到國際線</span></div>
+      <div class="timebar"><div class="bar" role="img" aria-label="方案A：由布院約5小時，交通約3小時，博多約3小時"><span class="p2" style="width:45%"></span><span class="t" style="width:27%"></span><span class="p" style="width:28%"></span></div>
+        <div class="legend"><span><i class="lp2"></i>由布院 <b>約5小時</b></span><span><i class="lt"></i>交通 <b>約3小時</b></span><span><i class="lp"></i>博多 <b>約3小時</b>（方案A）</span></div></div>
+      <ol class="steps">
+        <li><span class="main">早餐、泡湯、散步到<a class="pl" data-map="宇奈岐日女神社">宇奈岐日女神社</a></span><span class="dt">從旅館走路約10分鐘。</span></li>
+        <li><span class="main"><span class="tag">選配</span>清晨金鱗湖晨霧</span><span class="dt">前一晚請旅館幫忙叫計程車。</span></li>
+        <li><span class="main">退房，行李寄觀光情報中心，車站周邊散步</span></li>
+      </ol>
+      <div class="plan"><h4>方案A　由布院之森<em>推薦</em></h4>
+        <p class="main">12:01 由布院 → 14:19 博多 → 17:30 前往機場</p>
+        <span class="dt">2號，6,130日圓。博多站買伴手禮、吃晚餐，搭巴士或計程車到國際線約20分鐘，叫車目的地設「國際線」。</span>
+        <button type="button" class="drv" data-drv="airport" style="margin:6px 0 0"><svg><use href="#car"/></svg>給司機看</button></div>
+      <div class="plan"><h4>方案B　高速巴士直達機場</h4>
+        <p class="main">13:00／14:00／14:30 由布院 → 機場國際線</p>
+        <span class="dt">ゆふいん號：13:00→14:35（直達）、14:00→15:47、14:30→16:05（直達）；3,250日圓，全車預約制；行李放車底。可能塞車。久大本線停駛時也用這個。</span></div>
+      <div class="lugg"><svg><use href="#bag"/></svg><span>行李：退房後寄觀光情報中心 → 帶上車（A）或放巴士車底（B）。</span></div>
+    </div>
+  </article>
+  </div>
+
+  <div class="pager"><button type="button" id="prev">‹ <b id="prevL"></b></button><button type="button" id="next"><b id="nextL"></b> ›</button></div>
+  <p class="swipe-hint">左右滑動也能換日</p>
+</section>
+
+<!-- ================= 交通 ================= -->
+<section class="panel" id="p-transit" aria-label="交通" hidden>
+  <h2 class="sec"><svg><use href="#clock"/></svg>訂票時間</h2>
+  <div class="card"><ol class="booking">
+    <li><div class="when">10/23<small>台灣 9:00<br>日本 10:00</small></div><div><b>11/23 音速號指定席</b>（戶畑 → 博多）<span class="maybe">選訂</span><span class="dt">20號 11:45 或24號 12:45</span></div></li>
+    <li><div class="when">10/24<small>台灣 9:00<br>日本 10:00</small></div><div><b>11/24 由布院之森1號</b><span class="must">必訂</span><span class="dt">9:17 博多 → 11:31 由布院</span></div></li>
+    <li><div class="when">10/25<small>台灣 9:00<br>日本 10:00</small></div><div><b>11/25 由布院之森2號</b><span class="must">選A必訂</span><span class="dt">12:01 由布院 → 14:19 博多</span></div></li>
+    <li><div class="when">10/25<small>台灣 7:00<br>日本 8:00</small></div><div><b>11/25 高速巴士ゆふいん號</b><span class="must">選B必訂</span><span class="dt">由布院 → 機場國際線</span></div></li>
+  </ol></div>
+  <p class="muted" style="margin:10px 2px 0">JR車票用 JR九州官方「JR-KYUSHU Train Reservation」（有中文），信用卡付款。取票帶付款的信用卡、預約編號（6開頭5位數）和自設的4位認證碼，到JR九州售票機或售票處領；博多站要用JR九州的機器。</p>
+
+  <h2 class="sec"><svg><use href="#i-train"/></svg>博多 ↔ 戶畑</h2>
+  <div class="opts">
+    <div class="card opt"><div class="opt-top"><h4>快速／區間快速<span class="pill free">免訂位</span></h4><span class="fig">約1小時9分・1,510日圓</span></div><p>直達、刷IC卡，最隨興。戶畑回博多白天約每小時 :52 一班。</p></div>
+    <div class="card opt"><div class="opt-top"><h4>新幹線＋普通車<span class="pill free">免訂位</span></h4><span class="fig">約30–45分鐘・約2,430日圓</span></div><p>博多到小倉約15分鐘、每10–15分鐘一班；小倉走「JR九州線のりかえ口」轉普通車8分鐘。不能刷IC卡，售票機直接買到「戶畑」。</p></div>
+    <div class="card opt"><div class="opt-top"><h4>音速號自由席<span class="pill free">免訂位</span></h4><span class="fig">約41分鐘・約2,100日圓</span></div><p>另買特急券。不是每班停戶畑，沒停就坐到小倉，再搭普通車往回8分鐘。連假可能要站。</p></div>
+    <div class="card opt"><div class="opt-top"><h4>音速號指定席<span class="pill need">要訂位</span></h4><span class="fig">約41分鐘・多約500日圓</span></div><p>保證有位子。11/21 選抵達戶畑 14:01 的班次；11/23 選戶畑 11:45 或 12:45。</p></div>
+  </div>
+
+  <h3 class="sub">其他路段</h3>
+  <div class="card rows">
+    <div><span>機場國際線 → 博多站</span><span>巴士約20–25分鐘</span></div>
+    <div><span>戶畑 ↔ 小倉</span><span>8分鐘・270日圓</span></div>
+    <div><span>戶畑 → 西小倉（小倉城）</span><span>約5分鐘＋走路10分鐘</span></div>
+    <div><span>小倉 → 門司港</span><span>約13分鐘・340日圓</span></div>
+    <div><span>門司港 ↔ 唐戶（渡輪）</span><span>5分鐘・400日圓</span></div>
+    <div><span>戶畑站 ↔ 住處（計程車）</span><span>約5分鐘・900–1,100日圓</span></div>
+  </div>
+  <p class="muted" style="margin:10px 2px 0">北九州計程車：1.6公里內起跳860日圓，之後每253公尺加80日圓，深夜另有加成。</p>
+</section>
+
+<!-- ================= 紅葉 ================= -->
+<section class="panel" id="p-koyo" aria-label="紅葉" hidden>
+  <h2 class="sec"><svg><use href="#maple"/></svg>今年紅葉</h2>
+  <p class="muted" style="margin:0 2px 12px">九州今年偏晚，夏天乾熱，顏色可能比往年淡。楓葉越多，代表造訪當天越接近最盛期。</p>
+  <ul class="card koyo-list">
+    <li><span class="name"><a class="pl" data-map="小倉城">小倉城・小倉城庭園</a></span><span class="leaves" aria-label="5分之4"><svg class="on"><use href="#maple"/></svg><svg class="on"><use href="#maple"/></svg><svg class="on"><use href="#maple"/></svg><svg class="on"><use href="#maple"/></svg><svg><use href="#maple"/></svg></span><span class="meta">預測 11/25 見頃・造訪 11/21 傍晚或 11/22 早上</span></li>
+    <li><span class="name"><a class="pl" data-map="宝満宮竈門神社">竈門神社・光明禪寺</a></span><span class="leaves" aria-label="5分之3"><svg class="on"><use href="#maple"/></svg><svg class="on"><use href="#maple"/></svg><svg class="on"><use href="#maple"/></svg><svg><use href="#maple"/></svg><svg><use href="#maple"/></svg></span><span class="meta">預測 11/28 見頃・造訪 11/21，約五六分紅</span></li>
+    <li><span class="name"><a class="pl" data-map="金鱗湖">金鱗湖</a></span><span class="leaves" aria-label="5分之3"><svg class="on"><use href="#maple"/></svg><svg class="on"><use href="#maple"/></svg><svg class="on"><use href="#maple"/></svg><svg><use href="#maple"/></svg><svg><use href="#maple"/></svg></span><span class="meta">往年11月上–中旬・造訪 11/24–25，今年預測未公布</span></li>
+    <li><span class="name">福岡市區（舞鶴公園、大濠公園）</span><span class="leaves" aria-label="5分之1"><svg class="on"><use href="#maple"/></svg><svg><use href="#maple"/></svg><svg><use href="#maple"/></svg><svg><use href="#maple"/></svg><svg><use href="#maple"/></svg></span><span class="meta">楓葉預測約 12/7・造訪 11/23，零星轉紅</span></li>
+  </ul>
+  <div class="foot">資料整理於2026年10月，班次、營業時間以現場與官方公告為準。
+    <ul>
+      <li><a href="https://weathernews.jp/koyo/area/fukuoka/" target="_blank" rel="noopener">Weathernews 福岡紅葉預測</a></li>
+      <li><a href="https://matcha-jp.com/jp/19455" target="_blank" rel="noopener">MATCHA 由布院之森2026時刻表</a></li>
+      <li><a href="https://www.jrkyushu.co.jp/chinese/train_reservation/service/" target="_blank" rel="noopener">JR-KYUSHU Train Reservation（中文）</a></li>
+      <li><a href="https://www.nishitetsu.jp/bus/rosen/dazaihu_liner/" target="_blank" rel="noopener">西鐵「旅人」巴士</a></li>
+      <li><a href="https://www.mojiko.info/event/info/illuminationromansai/" target="_blank" rel="noopener">門司港レトロ浪漫灯彩2026</a></li>
+      <li><a href="https://www.nishitetsu.jp/bus/highwaybus/rosen/yufuin/" target="_blank" rel="noopener">高速巴士ゆふいん號</a></li>
+    </ul></div>
+</section>
+
+<!-- ================= 清單 ================= -->
+<section class="panel" id="p-list" aria-label="出發前清單" hidden>
+  <h2 class="sec"><svg><use href="#i-check"/></svg>出發前清單</h2>
+  <ul class="card check" id="checklist">
+    <li><label><input type="checkbox" data-k="ic"><span class="bx"><svg><use href="#tick"/></svg></span><span class="txt">準備IC卡（Suica／SUGOCA）並儲值<small>iPhone 可直接加 Suica</small></span></label></li>
+    <li><label><input type="checkbox" data-k="sonic"><span class="bx"><svg><use href="#tick"/></svg></span><span class="txt">11/23 音速號指定席（選訂）<small>10/23 台灣 9:00 開賣</small></span></label></li>
+    <li><label><input type="checkbox" data-k="mori1"><span class="bx"><svg><use href="#tick"/></svg></span><span class="txt">買 11/24 由布院之森1號<small>10/24 台灣 9:00 開賣</small></span></label></li>
+    <li><label><input type="checkbox" data-k="day6"><span class="bx"><svg><use href="#tick"/></svg></span><span class="txt">決定 11/25 方案A或B並訂票<small>10/25：由布院之森台灣 9:00、高速巴士台灣 7:00</small></span></label></li>
+    <li><label><input type="checkbox" data-k="host"><span class="bx"><svg><use href="#tick"/></svg></span><span class="txt">問 Nostime 房東<small>11/22 晚上21–22點回去可以嗎、大門怎麼開</small></span></label></li>
+    <li><label><input type="checkbox" data-k="cash"><span class="bx"><svg><use href="#tick"/></svg></span><span class="txt">準備現金和100日圓硬幣<small>置物櫃、住宿稅（每晚約200日圓）、入湯稅250日圓</small></span></label></li>
+    <li><label><input type="checkbox" data-k="coat"><span class="bx"><svg><use href="#tick"/></svg></span><span class="txt">帶保暖外套<small>由布院清晨可能接近0度</small></span></label></li>
+    <li><label><input type="checkbox" data-k="open"><span class="bx"><svg><use href="#tick"/></svg></span><span class="txt">加到主畫面，並在有網路時打開一次<small>之後沒網路也能看行程；點地圖仍需要網路</small></span></label></li>
+    <li><label><input type="checkbox" data-k="week"><span class="bx"><svg><use href="#tick"/></svg></span><span class="txt">出發前一週再確認<small>紅葉狀況、由布院之森運行日曆、光明禪寺開門時間、竈門神社點燈日期、由布院餐廳營業時間</small></span></label></li>
+  </ul>
+  <div class="check-meta"><span id="progress"></span><button type="button" id="reset">清除勾選</button></div>
+</section>
+
+</div>
+
+<nav class="tabbar" aria-label="分頁"><div class="tabbar-inner" role="tablist">
+  <button type="button" role="tab" data-tab="info"><svg><use href="#i-info"/></svg>總覽</button>
+  <button type="button" role="tab" data-tab="day"><svg><use href="#i-day"/></svg>每日</button>
+  <button type="button" role="tab" data-tab="transit"><svg><use href="#i-train"/></svg>交通</button>
+  <button type="button" role="tab" data-tab="koyo"><svg><use href="#maple"/></svg>紅葉</button>
+  <button type="button" role="tab" data-tab="list"><svg><use href="#i-check"/></svg>清單</button>
+</div></nav>
+
+<dialog id="drvDlg" aria-label="給司機看"><div class="dlg">
+  <p class="ask">ここまでお願いします</p>
+  <p class="ja" id="drvJa"></p>
+  <p class="addr" id="drvAddr"></p>
+  <button type="button" id="drvClose">關閉</button>
+</div></dialog>
+
+<script>
+(function(){
+  function store(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){return null}}
+
+  /* map links */
+  [].forEach.call(document.querySelectorAll('[data-map]'),function(a){
+    a.href='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(a.dataset.map);
+    a.target='_blank';a.rel='noopener';
+  });
+
+  /* driver dialog */
+  var DRV={
+    nostime:['Nostime lodge','福岡県北九州市戸畑区丸町2丁目4-20'],
+    tobata:['JR戸畑駅','福岡県北九州市戸畑区'],
+    sanso:['山荘 田名加','大分県由布市湯布院町川南286-1'],
+    yufuin:['JR由布院駅','大分県由布市湯布院町'],
+    airport:['福岡空港 国際線ターミナル','福岡市博多区'],
+    kamado:['宝満宮 竈門神社','福岡県太宰府市内山883'],
+    toyoko:['東横INN 博多駅南','福岡市博多区博多駅南2丁目10'],
+    toyo:['東洋ホテル','福岡市博多区博多駅東1-9-36']
+  };
+  var dlg=document.getElementById('drvDlg');
+  [].forEach.call(document.querySelectorAll('[data-drv]'),function(b){
+    b.addEventListener('click',function(){
+      var d=DRV[b.dataset.drv];if(!d)return;
+      document.getElementById('drvJa').textContent=d[0];
+      document.getElementById('drvAddr').textContent=d[1];
+      if(dlg.showModal)dlg.showModal();else dlg.setAttribute('open','');
+    });
+  });
+  document.getElementById('drvClose').addEventListener('click',function(){dlg.close?dlg.close():dlg.removeAttribute('open')});
+  dlg.addEventListener('click',function(e){if(e.target===dlg)dlg.close()});
+
+  /* tabs */
+  var tabs=['info','day','transit','koyo','list'];
+  var tabBtns=[].slice.call(document.querySelectorAll('.tabbar button'));
+  function showTab(t){
+    tabs.forEach(function(x){document.getElementById('p-'+x).hidden=(x!==t)});
+    tabBtns.forEach(function(b){b.setAttribute('aria-selected',b.dataset.tab===t)});
+    window.scrollTo(0,0);
+  }
+  tabBtns.forEach(function(b){b.addEventListener('click',function(){showTab(b.dataset.tab)})});
+
+  /* days */
+  var days=[].slice.call(document.querySelectorAll('.day'));
+  var chips=[].slice.call(document.querySelectorAll('.chips button'));
+  var labels=['11/20','11/21','11/22','11/23','11/24','11/25'];
+  var cur=0;
+  function showDay(i,dir){
+    if(i<0||i>5)return;
+    days.forEach(function(d,k){d.hidden=(k!==i);d.classList.remove('anim','back')});
+    if(dir){void days[i].offsetWidth;days[i].classList.add('anim');if(dir<0)days[i].classList.add('back')}
+    chips.forEach(function(c,k){c.setAttribute('aria-selected',k===i)});
+    chips[i].scrollIntoView({block:'nearest',inline:'center'});
+    cur=i;
+    var p=document.getElementById('prev'),n=document.getElementById('next');
+    p.disabled=i===0;n.disabled=i===5;
+    document.getElementById('prevL').textContent=i>0?labels[i-1]:'';
+    document.getElementById('nextL').textContent=i<5?labels[i+1]:'';
+  }
+  chips.forEach(function(c){c.addEventListener('click',function(){var i=+c.dataset.d;showDay(i,i>cur?1:-1)})});
+  document.getElementById('prev').addEventListener('click',function(){showDay(cur-1,-1);window.scrollTo(0,0)});
+  document.getElementById('next').addEventListener('click',function(){showDay(cur+1,1);window.scrollTo(0,0)});
+
+  /* swipe */
+  var area=document.getElementById('days'),sx=0,sy=0,tracking=false;
+  area.addEventListener('touchstart',function(e){var t=e.touches[0];sx=t.clientX;sy=t.clientY;tracking=true},{passive:true});
+  area.addEventListener('touchend',function(e){
+    if(!tracking)return;tracking=false;
+    var t=e.changedTouches[0],dx=t.clientX-sx,dy=t.clientY-sy;
+    if(Math.abs(dx)>60&&Math.abs(dx)>Math.abs(dy)*1.5){
+      if(e.target.closest('a,button'))return;
+      showDay(cur+(dx<0?1:-1),dx<0?1:-1);
+    }
+  },{passive:true});
+
+  /* brief / full */
+  var modeBtns=[].slice.call(document.querySelectorAll('.seg button'));
+  function setMode(m){
+    document.getElementById('days').classList.toggle('brief',m==='brief');
+    modeBtns.forEach(function(b){b.setAttribute('aria-pressed',b.dataset.mode===m)});
+    store('fk-mode',m);
+  }
+  modeBtns.forEach(function(b){b.addEventListener('click',function(){setMode(b.dataset.mode)})});
+  setMode(store('fk-mode')==='full'?'full':'brief');
+
+  /* checklist */
+  var KEY='fukuoka-koyo-checklist-v1',state={};
+  try{state=JSON.parse(store(KEY))||{}}catch(e){state={}}
+  var boxes=[].slice.call(document.querySelectorAll('#checklist input'));
+  function prog(){document.getElementById('progress').textContent='已完成 '+boxes.filter(function(b){return b.checked}).length+' / '+boxes.length}
+  boxes.forEach(function(b){b.checked=!!state[b.dataset.k];b.addEventListener('change',function(){state[b.dataset.k]=b.checked;store(KEY,JSON.stringify(state));prog()})});
+  document.getElementById('reset').addEventListener('click',function(){boxes.forEach(function(b){b.checked=false});state={};store(KEY,'{}');prog()});
+  prog();
+
+  /* today (Japan time) */
+  var jst=new Date(Date.now()+9*36e5).toISOString().slice(0,10);
+  var tripDays=['2026-11-20','2026-11-21','2026-11-22','2026-11-23','2026-11-24','2026-11-25'];
+  var ti=tripDays.indexOf(jst);
+  if(ti>=0){var tb=document.createElement('span');tb.className='today';tb.textContent='今天';chips[ti].appendChild(tb)}
+
+  /* start: hash > today > overview */
+  var h=location.hash.slice(1),m=/^d([1-6])$/.exec(h);
+  if(m){showDay(+m[1]-1);showTab('day')}
+  else if(tabs.indexOf(h)>=0){showDay(ti>=0?ti:0);showTab(h)}
+  else if(ti>=0){showDay(ti);showTab('day')}
+  else{showDay(0);showTab('info')}
+})();
+if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){})})}
+</script>
+</body>
+</html>
