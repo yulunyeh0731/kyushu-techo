@@ -1,5 +1,5 @@
 // 修改 index.html 後，把這裡的版本號加 1 再上傳，手機上的 App 才會更新
-const CACHE = 'kyushu-techo-v1';
+const CACHE = 'kyushu-techo-v2';
 const CORE = [
   './',
   './index.html',
