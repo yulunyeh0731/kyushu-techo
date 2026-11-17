@@ -555,7 +555,7 @@ dialog::backdrop{background:rgba(20,15,12,.55)}
     if(dir){void days[i].offsetWidth;days[i].classList.add('anim');if(dir<0)days[i].classList.add('back')}
     chips.forEach(function(c,k){c.setAttribute('aria-selected',k===i)});
     chips[i].scrollIntoView({block:'nearest',inline:'center'});
-    if(dir){var top=document.getElementById('days').getBoundingClientRect().top+scrollY-document.querySelector('.daybar').offsetHeight;if(scrollY>top)window.scrollTo(0,top)}
+    if(dir){var db=document.querySelector('.daybar'),top=document.getElementById('days').getBoundingClientRect().top+scrollY-db.offsetHeight-(parseFloat(getComputedStyle(db).top)||0);if(scrollY>top)window.scrollTo(0,top)}
     cur=i;
     var p=document.getElementById('prev'),n=document.getElementById('next');
     p.disabled=i===0;n.disabled=i===5;
